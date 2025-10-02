@@ -1,0 +1,123 @@
+/* Gaya Umum */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e0f7fa; /* Warna latar belakang biru muda */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.pricing-container {
+  display: flex; /* Menggunakan Flexbox untuk tata letak kolom */
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.pricing-card {
+  flex: 1; /* Membuat semua kolom memiliki lebar yang sama */
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ilustrasi Placeholder */
+.illustration {
+  height: 100px; /* Sesuaikan tinggi sesuai kebutuhan */
+  background-color: #f0f0f0; /* Warna abu-abu terang sebagai placeholder */
+  border-radius: 4px;
+  margin-bottom: 20px;
+  /* Ini hanya placeholder, Anda perlu menggantinya dengan gambar/SVG */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  font-size: 12px;
+}
+
+/* Header Rencana */
+.plan-header {
+  font-size: 1.2em;
+  color: #607d8b; /* Warna abu-abu kebiruan */
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Fitur */
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.features li {
+  padding: 10px 0;
+  color: #666;
+  font-size: 0.9em;
+  border-bottom: 1px solid #eee;
+}
+
+.features li:last-child {
+  border-bottom: none;
+}
+
+/* Harga */
+.price {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #00bcd4; /* Warna harga biru */
+  margin: 20px 0;
+}
+.pricing-card.small-team .price {
+  color: #3f51b5; /* Biru yang berbeda untuk Small Team */
+}
+
+/* Tombol CTA */
+.cta-button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+  width: 80%;
+  margin-top: 20px;
+}
+
+.signup {
+  background-color: transparent;
+  border: 2px solid #00bcd4; /* Border biru untuk FREE/SIGN UP */
+  color: #00bcd4;
+}
+
+.trial {
+  background-color: #00bcd4; /* Warna biru untuk FREE TRIAL */
+  color: white;
+}
+
+.cta-button.trial:hover {
+  background-color: #0097a7;
+}
+
+.cta-button.signup:hover {
+  background-color: #e0f7fa;
+}
+
+/* Responsif untuk layar kecil (misalnya, di bawah 768px) */
+@media (max-width: 768px) {
+  .pricing-container {
+    flex-direction: column; /* Mengubah tata letak menjadi tumpukan kolom */
+    gap: 15px;
+  }
+
+  .pricing-card {
+    padding: 20px;
+  }
+}
